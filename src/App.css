@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  background: url("https://images.pexels.com/photos/169647/pexels-photo-169647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.form-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  /* opacity: 0.8; */
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  margin: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  color: #fff;
+  font-size: 40px;
+  margin: 30px 40px;
+}
+
+.form {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.input-group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #ccc; */
+  margin-bottom: 30px;
+  padding: 8px 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.input-group input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  color: #eee;
+  width: 100%;
+}
+
+.input-group input:focus {
+  outline: none;
+}
+.input-group span {
+  color: #eee;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.button input {
+  background-color: transparent;
+  color: #eee;
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #007bfe;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.link {
+  font-size: 16px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.text {
+  font-size: 16px;
+  color: #eee;
 }
